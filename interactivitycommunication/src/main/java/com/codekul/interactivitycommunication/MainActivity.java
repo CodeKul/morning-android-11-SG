@@ -34,10 +34,28 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtras(bundle);
 
-        startActivity(intent);
+        //startActivity(intent);
+        startActivityForResult(intent, 1234);
 
         Car c = new Car();
         Car cB = new Bmw();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1234) {
+            // you are coming back from SportsActivity
+            if (resultCode == RESULT_OK) {
+                if (data != null) {
+                    Bundle bndl = data.getExtras();
+                    if (bndl != null) {
+                        String opNm = bndl.getString("opNm");
+                        ((EditText) findViewById(R.id.edtNm)).setText(opNm);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -45,6 +63,6 @@ class Car {
 
 }
 
-class Bmw  extends  Car{
+class Bmw extends Car {
 
 }

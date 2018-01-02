@@ -1,1 +1,1 @@
-include ':app', ':sample', ':applib', ':layouts', ':interactivitycommunication', ':compoundviews'
+include ':app', ':sample', ':applib', ':layouts', ':interactivitycommunication', ':compoundviews', ':customview'

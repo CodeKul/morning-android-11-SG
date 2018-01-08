@@ -10,12 +10,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/adapterviews" />
+            <option value="$PROJECT_DIR$/alternativeresources" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/applib" />
             <option value="$PROJECT_DIR$/compoundviews" />
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/interactivitycommunication" />
             <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/manuallyhandlingruntimechanges" />
             <option value="$PROJECT_DIR$/sample" />
             <option value="$PROJECT_DIR$/viewanimations" />
           </set>

@@ -1,12 +1,8 @@
-package com.codekul.activitylifecycle;
+package com.codekul.alternativeresources;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,11 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (savedInstanceState != null) {
-            ((TextView) findViewById(R.id.textView)).setText(
-                    savedInstanceState.getString("myDt")
-            );
-        }
         mt("onCreate");
     }
 
@@ -62,30 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mt("onRestart");
     }
 
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-
-        if (savedInstanceState != null) {
-            ((TextView) findViewById(R.id.textView)).setText(
-                    savedInstanceState.getString("myDt")
-            );
-        }
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString("myDt", ((TextView) findViewById(R.id.textView)).getText().toString());
-    }
-
     private void mt(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-    }
-
-    public void onBtn(View view) {
-        ((TextView) findViewById(R.id.textView)).setText(
-                String.valueOf(System.currentTimeMillis())
-        );
     }
 }

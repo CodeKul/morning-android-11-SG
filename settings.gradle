@@ -1,1 +1,1 @@
-include ':app', ':sample', ':applib', ':layouts', ':interactivitycommunication', ':compoundviews', ':customview', ':adapterviews', ':viewanimations', ':activitylifecycle', ':alternativeresources', ':manuallyhandlingruntimechanges'
+include ':app', ':sample', ':applib', ':layouts', ':interactivitycommunication', ':compoundviews', ':customview', ':adapterviews', ':viewanimations', ':activitylifecycle', ':alternativeresources', ':manuallyhandlingruntimechanges', ':simplevalueresources', ':fragments'

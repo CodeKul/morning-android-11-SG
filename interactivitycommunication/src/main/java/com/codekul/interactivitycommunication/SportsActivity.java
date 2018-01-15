@@ -46,7 +46,12 @@ public class SportsActivity extends AppCompatActivity {
                             .setText(builder.toString());
                 }
         );
-
+ (cb, st) -> {
+                    if(st) builder.append(",Apple");
+                    else delete(",Apple");
+                    ((TextView) findViewById(R.id.txtCmp))
+                            .setText(builder.toString());
+                }
         ((CheckBox)findViewById(R.id.chWin)).setOnCheckedChangeListener(this::chkChg);
     }
 

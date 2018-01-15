@@ -7,16 +7,19 @@
     android:gravity="center">
 
     <Button
+        android:id="@+id/btnBike"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnBk"/>
 
     <Button
+        android:id="@+id/btnPlane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnPln"/>
 
     <Button
+        android:id="@+id/btnBus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnRal"/>

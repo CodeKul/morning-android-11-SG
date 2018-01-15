@@ -22,8 +22,31 @@ public class BtnPnl extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_btn_pnl, container, false);
-    }
 
+        final View viewInf = inflater.inflate(R.layout.fragment_btn_pnl, container, false);
+        final MainActivity hstAct = (MainActivity) getActivity();
+
+        viewInf.findViewById(R.id.btnBike).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hstAct.loadFrg(new BikeFragment());
+            }
+        });
+
+        viewInf.findViewById(R.id.btnPlane).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hstAct.loadFrg(new PlaneFragment());
+            }
+        });
+
+        viewInf.findViewById(R.id.btnBus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hstAct.loadFrg(new RailFragment());
+            }
+        });
+
+        return viewInf;
+    }
 }

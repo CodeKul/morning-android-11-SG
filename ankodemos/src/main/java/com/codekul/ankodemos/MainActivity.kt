@@ -51,6 +51,14 @@ class MainActivity : AppCompatActivity() {
                     ).show()
                 }
             }
+            button("Progress Dialog") {
+                onClick {
+                    indeterminateProgressDialog(
+                            message = "Please wait a bit…",
+                            title = "Fetching data"
+                    )
+                }
+            }
         }
     }
 }

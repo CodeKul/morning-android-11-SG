@@ -20,15 +20,17 @@ class MyService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 
+        Thread {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                oreoNfn()
+            } else {
+                lwOreo()
+            }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            oreoNfn()
-        } else {
-            lwOreo()
-        }
+            mp = MediaPlayer.create(this, R.raw.my)
+            mp?.start()
+        }.start()
 
-        mp = MediaPlayer.create(this, R.raw.my)
-        mp?.start()
         return START_NOT_STICKY
     }
 

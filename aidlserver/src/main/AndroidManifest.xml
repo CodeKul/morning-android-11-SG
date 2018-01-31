@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codekul.services">
+    package="com.codekul.common">
 
     <application
         android:allowBackup="true"
@@ -20,13 +20,11 @@
         <service
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name=".NotiActivity" />
-
-        <service
-            android:name=".MyIntentService"
-            android:exported="false"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.codekul.my.action"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

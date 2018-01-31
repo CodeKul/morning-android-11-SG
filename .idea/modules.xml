@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Morning11SG.iml" filepath="$PROJECT_DIR$/Morning11SG.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" filepath="$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/adapterviews/adapterviews.iml" filepath="$PROJECT_DIR$/adapterviews/adapterviews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlclient/aidlclient.iml" filepath="$PROJECT_DIR$/aidlclient/aidlclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlserver/aidlserver.iml" filepath="$PROJECT_DIR$/aidlserver/aidlserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/alternativeresources/alternativeresources.iml" filepath="$PROJECT_DIR$/alternativeresources/alternativeresources.iml" />
       <module fileurl="file://$PROJECT_DIR$/ankodemos/ankodemos.iml" filepath="$PROJECT_DIR$/ankodemos/ankodemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

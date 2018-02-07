@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/asyncops" />
             <option value="$PROJECT_DIR$/broadcastreceivers" />
             <option value="$PROJECT_DIR$/compoundviews" />
+            <option value="$PROJECT_DIR$/cpclient" />
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/dualcamera" />
             <option value="$PROJECT_DIR$/filestorage" />

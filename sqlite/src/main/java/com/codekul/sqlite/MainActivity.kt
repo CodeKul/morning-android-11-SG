@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         Thread {
             val mob = Mobile()
             mob.isQw = true
-            mob.mbId= 78899
             mob.mnFr = "Moto"
             mob.typ = "TAB"
 

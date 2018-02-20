@@ -1,0 +1,18 @@
+{
+	"nm" : "Android",
+	"age" : 10,
+	"btry" : 6,
+	"mb" : {
+		"cst" : 10,
+		"isTouch" : true 
+	},
+	"lngs" : [
+		"English",
+		"Hindi",
+		"Japnise"
+	]
+}
+
+
+
+
